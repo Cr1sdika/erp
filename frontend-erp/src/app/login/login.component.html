@@ -1,20 +1,22 @@
-<div class="img">
-  <div style="background-color: orangered">
+<div class="login-container">
+  <div class="login-box">
+    <h1>Login</h1>
     <form action="">
-      <div style="background-color: white">
-          <h1>Login</h1>
-          <mat-form-field appearance="outline">
-            <mat-label>E-mail</mat-label>
-            <input matInput type="text">
-          </mat-form-field>
-          <input type="text">
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput required>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Senha</mat-label>
+        <input type="password" matInput required>
+      </mat-form-field>
+      <div>
+        <button mat-raised-button color="primary">Entrar</button>
       </div>
     </form>
-
-    <div>
-      <p>Você não tem uma conta?</p>
-      <p>Crie já!</p>
-      <button>Cadastre-se</button>
+    <div class="signup-link">
+      <p>Não tem uma conta?</p>
+      <a href="">Cadastre-se</a>
     </div>
   </div>
 </div>
